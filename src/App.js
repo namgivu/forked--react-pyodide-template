@@ -5,7 +5,7 @@ import './App.css';
 
 const runScript = async (code) => {
   const pyodide = await window.loadPyodide({
-    indexURL : "https://cdn.jsdelivr.net/pyodide/v0.18.1/full/"
+    indexURL : 'https://cdn.jsdelivr.net/pyodide/dev/full/'  //TODO how to make it offline
   });
 
   return await pyodide.runPythonAsync(code);
